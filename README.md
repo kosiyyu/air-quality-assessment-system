@@ -1,25 +1,12 @@
 # Air Quality Assessment System
+> The Air Quality Assessment System is a two-segment system designed to evaluate the quality of air based on various environmental factors.
 
-### Data Example (Beauty):
+## Table of Contents
+- [Segment 1](#Segment1)
+- [Segment 2](#Segment2)
 
-| Date Time           | PM10 | PM2.5 | NO2  | SO2 | CO  |
-|---------------------|------|-------|------|-----|-----|
-| 2023-10-01 01:00    | 18.9 | 25.8  | 16.3 | 2.1 | 0.2 |
-| 2023-10-01 02:00    | 18.9 | 25.2  | 15.7 | 1.2 | 0.2 |
-| 2023-10-01 03:00    | 19.2 | 25.3  | 14.5 |     | 0.2 |
-| 2023-10-01 04:00    | 21.9 | 28.5  |      | 2.0 | 0.2 |
+## Segment 1: Pollution Estimation
+The first segment takes in the values of PM10 and PM2.5, which are common indicators of air pollution. The output of this segment is a pollution estimate based on these input values.
 
-### Column Types:
-
-| Column    | Type       |
-|-----------|------------|
-| Date Time | datetime64 |
-| PM10      | float64    |
-| PM2.5     | float64    |
-| NO2       | float64    |
-| SO2       | float64    |
-| CO        | float64    |
-
-### Analysis:
-
-Add your analysis or any additional information about the data here.
+## Segment 2: Air Quality Evaluation
+The second segment takes the pollution estimate from the first segment and combines it with the average wind speed. The output of this segment is an overall air quality assessment.
